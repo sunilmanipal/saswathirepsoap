@@ -1,0 +1,87 @@
+2020-03-02 17:22:47,738 WARN  [SoapUI] Missing folder [C:\Users\SASWATISAMAI\Desktop\Project\my-app\ext] for external libraries
+2020-03-02 17:22:47,957 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\Users\SASWATISAMAI\soapui-settings.xml]
+2020-03-02 17:22:48,407 INFO  [PluginManager] 0 plugins loaded in 2 ms
+2020-03-02 17:22:48,408 INFO  [DefaultSoapUICore] All plugins loaded
+2020-03-02 17:22:49,548 INFO  [WsdlProject] Loaded project from [file:/C:/Users/SASWATISAMAI/Desktop/Project/my-app/catalogProductRepositoryV1-soapui-project.xml]
+2020-03-02 17:22:49,561 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [catalogProductRepositoryV1]
+2020-03-02 17:22:49,563 INFO  [SoapUITestCaseRunner] Running Project [catalogProductRepositoryV1], runType = SEQUENTIAL
+2020-03-02 17:22:49,614 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [Product_Functional Testcase]
+2020-03-02 17:22:49,624 INFO  [SoapUITestCaseRunner] running step [CreateNewProduct]
+2020-03-02 17:22:51,714 INFO  [SchemaUtils] Added default schema from file:/C:/Users/SASWATISAMAI/.m2/repository/com/smartbear/soapui/soapui/5.3.0/soapui-5.3.0.jar!/com/eviware/soapui/resources/xsds/xop.xsd with targetNamespace http://www.w3.org/2004/08/xop/include
+2020-03-02 17:22:51,735 INFO  [SchemaUtils] Added default schema from file:/C:/Users/SASWATISAMAI/.m2/repository/com/smartbear/soapui/soapui/5.3.0/soapui-5.3.0.jar!/com/eviware/soapui/resources/xsds/XMLSchema.xsd with targetNamespace http://www.w3.org/2001/XMLSchema
+2020-03-02 17:22:51,744 INFO  [SchemaUtils] Added default schema from file:/C:/Users/SASWATISAMAI/.m2/repository/com/smartbear/soapui/soapui/5.3.0/soapui-5.3.0.jar!/com/eviware/soapui/resources/xsds/xml.xsd with targetNamespace http://www.w3.org/XML/1998/namespace
+2020-03-02 17:22:51,748 INFO  [SchemaUtils] Added default schema from file:/C:/Users/SASWATISAMAI/.m2/repository/com/smartbear/soapui/soapui/5.3.0/soapui-5.3.0.jar!/com/eviware/soapui/resources/xsds/swaref.xsd with targetNamespace http://ws-i.org/profiles/basic/1.1/xsd
+2020-03-02 17:22:51,752 INFO  [SchemaUtils] Added default schema from file:/C:/Users/SASWATISAMAI/.m2/repository/com/smartbear/soapui/soapui/5.3.0/soapui-5.3.0.jar!/com/eviware/soapui/resources/xsds/xmime200505.xsd with targetNamespace http://www.w3.org/2005/05/xmlmime
+2020-03-02 17:22:51,754 INFO  [SchemaUtils] Added default schema from file:/C:/Users/SASWATISAMAI/.m2/repository/com/smartbear/soapui/soapui/5.3.0/soapui-5.3.0.jar!/com/eviware/soapui/resources/xsds/xmime200411.xsd with targetNamespace http://www.w3.org/2004/11/xmlmime
+2020-03-02 17:22:51,765 INFO  [SchemaUtils] Added default schema from file:/C:/Users/SASWATISAMAI/.m2/repository/com/smartbear/soapui/soapui/5.3.0/soapui-5.3.0.jar!/com/eviware/soapui/resources/xsds/soapEnvelope.xsd with targetNamespace http://schemas.xmlsoap.org/soap/envelope/
+2020-03-02 17:22:51,782 INFO  [SchemaUtils] Added default schema from file:/C:/Users/SASWATISAMAI/.m2/repository/com/smartbear/soapui/soapui/5.3.0/soapui-5.3.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd with targetNamespace http://schemas.xmlsoap.org/soap/encoding/
+2020-03-02 17:22:51,789 INFO  [SchemaUtils] Added default schema from file:/C:/Users/SASWATISAMAI/.m2/repository/com/smartbear/soapui/soapui/5.3.0/soapui-5.3.0.jar!/com/eviware/soapui/resources/xsds/soapEnvelope12.xsd with targetNamespace http://www.w3.org/2003/05/soap-envelope
+2020-03-02 17:22:51,796 INFO  [SchemaUtils] Added default schema from file:/C:/Users/SASWATISAMAI/.m2/repository/com/smartbear/soapui/soapui/5.3.0/soapui-5.3.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd with targetNamespace http://www.w3.org/2003/05/soap-encoding
+2020-03-02 17:22:51,798 INFO  [SchemaUtils] Loading schema types from [file:\C:\API_Testing\API_Testing_Project\SOAP%20API%20WSDL%20EndPoints\SOAP%20API%20WSDL%20EndPoints\catalogProductRepositoryV1.xml]
+2020-03-02 17:22:51,798 INFO  [SchemaUtils] Getting schema file:\C:\API_Testing\API_Testing_Project\SOAP%20API%20WSDL%20EndPoints\SOAP%20API%20WSDL%20EndPoints\catalogProductRepositoryV1.xml
+2020-03-02 17:22:52,801 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-03-02 17:22:52,802 INFO  [SoapUITestCaseRunner] Assertion [Not SOAP Fault] has status VALID
+2020-03-02 17:22:52,804 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+2020-03-02 17:22:52,809 INFO  [SoapUITestCaseRunner] Assertion [SLA Check] has status VALID
+2020-03-02 17:22:52,809 INFO  [SoapUITestCaseRunner] Assertion [Generated id Check] has status VALID
+2020-03-02 17:22:52,810 INFO  [SoapUITestCaseRunner] Assertion [sku Check] has status VALID
+2020-03-02 17:22:52,810 INFO  [SoapUITestCaseRunner] Assertion [Product Name Check] has status VALID
+2020-03-02 17:22:52,812 INFO  [SoapUITestCaseRunner] running step [GetProductBySKUandID]
+2020-03-02 17:22:54,045 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-03-02 17:22:54,045 INFO  [SoapUITestCaseRunner] Assertion [Not SOAP Fault] has status VALID
+2020-03-02 17:22:54,047 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+2020-03-02 17:22:54,051 INFO  [SoapUITestCaseRunner] Assertion [SLA Check] has status VALID
+2020-03-02 17:22:54,052 INFO  [SoapUITestCaseRunner] Assertion [Retrieved id Check] has status VALID
+2020-03-02 17:22:54,052 INFO  [SoapUITestCaseRunner] Assertion [Retrieved Product SKU Check] has status VALID
+2020-03-02 17:22:54,053 INFO  [SoapUITestCaseRunner] Assertion [Retrieved Product name Check] has status VALID
+2020-03-02 17:22:54,055 INFO  [SoapUITestCaseRunner] running step [GetProductList]
+2020-03-02 17:22:55,568 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-03-02 17:22:55,568 INFO  [SoapUITestCaseRunner] Assertion [Not SOAP Fault] has status VALID
+2020-03-02 17:22:55,569 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+2020-03-02 17:22:55,574 INFO  [SoapUITestCaseRunner] Assertion [XPath Match] has status UNKNOWN
+2020-03-02 17:22:55,574 INFO  [SoapUITestCaseRunner] Assertion [Check Count Of Product] has status VALID
+2020-03-02 17:22:55,574 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
+2020-03-02 17:22:55,575 INFO  [SoapUITestCaseRunner] Assertion [XPath Match 1] has status VALID
+2020-03-02 17:22:55,575 INFO  [SoapUITestCaseRunner] running step [DeleteProductBySKU]
+2020-03-02 17:22:56,634 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-03-02 17:22:56,634 INFO  [SoapUITestCaseRunner] Assertion [Not SOAP Fault] has status VALID
+2020-03-02 17:22:56,638 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+2020-03-02 17:22:56,639 INFO  [SoapUITestCaseRunner] Assertion [Delete_Result_Check] has status VALID
+2020-03-02 17:22:56,644 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [Product_Functional Testcase], time taken: 6967ms, status: FINISHED
+2020-03-02 17:22:56,648 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [Product_E2EFlow_System Testcase1]
+2020-03-02 17:22:56,649 INFO  [SoapUITestCaseRunner] running step [Product Flow]
+2020-03-02 17:22:56,743 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [Product_Functional Testcase]
+2020-03-02 17:22:56,745 INFO  [SoapUITestCaseRunner] running step [CreateNewProduct]
+2020-03-02 17:22:58,062 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-03-02 17:22:58,062 INFO  [SoapUITestCaseRunner] Assertion [Not SOAP Fault] has status VALID
+2020-03-02 17:22:58,064 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+2020-03-02 17:22:58,064 INFO  [SoapUITestCaseRunner] Assertion [SLA Check] has status VALID
+2020-03-02 17:22:58,068 INFO  [SoapUITestCaseRunner] Assertion [Generated id Check] has status VALID
+2020-03-02 17:22:58,068 INFO  [SoapUITestCaseRunner] Assertion [sku Check] has status VALID
+2020-03-02 17:22:58,069 INFO  [SoapUITestCaseRunner] Assertion [Product Name Check] has status VALID
+2020-03-02 17:22:58,069 INFO  [SoapUITestCaseRunner] running step [GetProductBySKUandID]
+2020-03-02 17:22:59,136 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-03-02 17:22:59,137 INFO  [SoapUITestCaseRunner] Assertion [Not SOAP Fault] has status VALID
+2020-03-02 17:22:59,140 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+2020-03-02 17:22:59,143 INFO  [SoapUITestCaseRunner] Assertion [SLA Check] has status VALID
+2020-03-02 17:22:59,143 INFO  [SoapUITestCaseRunner] Assertion [Retrieved id Check] has status VALID
+2020-03-02 17:22:59,144 INFO  [SoapUITestCaseRunner] Assertion [Retrieved Product SKU Check] has status VALID
+2020-03-02 17:22:59,145 INFO  [SoapUITestCaseRunner] Assertion [Retrieved Product name Check] has status VALID
+2020-03-02 17:22:59,146 INFO  [SoapUITestCaseRunner] running step [GetProductList]
+2020-03-02 17:23:00,226 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-03-02 17:23:00,226 INFO  [SoapUITestCaseRunner] Assertion [Not SOAP Fault] has status VALID
+2020-03-02 17:23:00,227 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+2020-03-02 17:23:00,231 INFO  [SoapUITestCaseRunner] Assertion [XPath Match] has status UNKNOWN
+2020-03-02 17:23:00,231 INFO  [SoapUITestCaseRunner] Assertion [Check Count Of Product] has status VALID
+2020-03-02 17:23:00,232 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
+2020-03-02 17:23:00,232 INFO  [SoapUITestCaseRunner] Assertion [XPath Match 1] has status VALID
+2020-03-02 17:23:00,233 INFO  [SoapUITestCaseRunner] running step [DeleteProductBySKU]
+2020-03-02 17:23:01,295 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-03-02 17:23:01,296 INFO  [SoapUITestCaseRunner] Assertion [Not SOAP Fault] has status VALID
+2020-03-02 17:23:01,298 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+2020-03-02 17:23:01,300 INFO  [SoapUITestCaseRunner] Assertion [Delete_Result_Check] has status VALID
+2020-03-02 17:23:01,305 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [Product_Functional Testcase], time taken: 4521ms, status: FINISHED
+2020-03-02 17:23:01,332 INFO  [log] Status: FINISHED, time taken for TestCase was: 4521 ms
+2020-03-02 17:23:01,351 INFO  [log] Number of test steps which ran: 4
+2020-03-02 17:23:01,359 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [Product_E2EFlow_System Testcase1], time taken: 4705ms, status: FINISHED
+2020-03-02 17:23:01,360 INFO  [SoapUITestCaseRunner] Project [catalogProductRepositoryV1] finished with status [FINISHED] in 11777ms

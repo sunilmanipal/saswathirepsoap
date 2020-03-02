@@ -1,0 +1,115 @@
+Status: FAILED
+Time Taken: 13300
+Size: 1359
+Timestamp: Mon Mar 02 17:18:23 IST 2020
+TestStep: CreateNewProduct
+
+----------------- Messages ------------------------------
+[SLA Check] assert messageExchange.timeTaken < 3000
+       |               |         |
+       |               11377     false
+       com.eviware.soapui.impl.wsdl.teststeps.WsdlResponseMessageExchange@5b9c64f
+
+----------------- Properties ------------------------------
+Endpoint: http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1
+Encoding: UTF-8
+
+---------------- Request ---------------------------
+Request Headers: Authorization : bearer f0rf13pxtxp7mftwc23rq6e52yvmi5um
+Connection : Keep-Alive
+User-Agent : Apache-HttpClient/4.1.1 (java 1.5)
+Host : soap.upskills.in
+Accept-Encoding : gzip,deflate
+Content-Length : 656
+Content-Type : application/soap+xml;charset=UTF-8;action="catalogProductRepositoryV1Save"
+
+
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1">
+   <soap:Header/>
+   <soap:Body>
+      <def:catalogProductRepositoryV1SaveRequest>
+         <product>
+            <sku>SKU00175</sku>
+            <name>Iphone Air 501</name>
+            <attributeSetId>4</attributeSetId>
+            //default value 4
+            <price>26000</price>
+            <typeId>simple</typeId>
+            //for value refer catalogProductTypeListV1 WSDL Endpoint
+         </product>
+      </def:catalogProductRepositoryV1SaveRequest>
+   </soap:Body>
+</soap:Envelope>
+
+---------------- Response --------------------------
+Response Headers: X-UA-Compatible : IE=edge
+Cache-Control : no-store, no-cache, must-revalidate
+Server : LiteSpeed
+Connection : Keep-Alive
+Set-Cookie : PHPSESSID=e24bdfbab8c31d747f95f90823a8a81a; expires=Mon, 02-Mar-2020 12:48:25 GMT; Max-Age=3600; path=/; domain=soap.upskills.in; HttpOnly
+Expires : Thu, 19 Nov 1981 08:52:00 GMT
+Pragma : no-cache
+#status# : HTTP/1.1 200 OK
+Content-Length : 1359
+Date : Mon, 02 Mar 2020 11:48:35 GMT
+X-Powered-By : PHP/7.2.26
+Content-Type : application/soap+xml; charset=utf-8
+
+
+<env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns1="http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1">
+   <env:Body>
+      <ns1:catalogProductRepositoryV1SaveResponse>
+         <result>
+            <id>267</id>
+            <sku>SKU00175</sku>
+            <name>Iphone Air 501</name>
+            <attributeSetId>4</attributeSetId>
+            <price>26000</price>
+            <status>1</status>
+            <visibility>4</visibility>
+            <typeId>simple</typeId>
+            <createdAt>2020-03-01 20:14:46</createdAt>
+            <updatedAt>2020-03-02 11:48:31</updatedAt>
+            <extensionAttributes>
+               <websiteIds>
+                  <item>1</item>
+               </websiteIds>
+            </extensionAttributes>
+            <productLinks/>
+            <options/>
+            <mediaGalleryEntries/>
+            <tierPrices/>
+            <customAttributes>
+               <item>
+                  <attributeCode>options_container</attributeCode>
+                  <value>container2</value>
+               </item>
+               <item>
+                  <attributeCode>msrp_display_actual_price_type</attributeCode>
+                  <value>0</value>
+               </item>
+               <item>
+                  <attributeCode>url_key</attributeCode>
+                  <value>iphone-air-501</value>
+               </item>
+               <item>
+                  <attributeCode>required_options</attributeCode>
+                  <value>0</value>
+               </item>
+               <item>
+                  <attributeCode>has_options</attributeCode>
+                  <value>0</value>
+               </item>
+               <item>
+                  <attributeCode>tax_class_id</attributeCode>
+                  <value>2</value>
+               </item>
+               <item>
+                  <attributeCode>category_ids</attributeCode>
+                  <value/>
+               </item>
+            </customAttributes>
+         </result>
+      </ns1:catalogProductRepositoryV1SaveResponse>
+   </env:Body>
+</env:Envelope>

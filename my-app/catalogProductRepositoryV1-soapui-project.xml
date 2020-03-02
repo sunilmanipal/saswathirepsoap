@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="952a537e-76df-46de-806d-aa7aac4f6f09" activeEnvironment="Default" name="catalogProductRepositoryV1" resourceRoot="" soapui-version="5.5.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="a5903f97-11de-42aa-ada8-a44f3bd6572a" wsaVersion="NONE" name="catalogProductRepositoryV1Binding" type="wsdl" bindingName="{http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1}catalogProductRepositoryV1Binding" soapVersion="1_2" anonymous="optional" definition="file:/C:/API_Testing/API_Testing_Project/SOAP%20API%20WSDL%20EndPoints/SOAP%20API%20WSDL%20EndPoints/catalogProductRepositoryV1.xml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="file:\C:\API_Testing\API_Testing_Project\SOAP%20API%20WSDL%20EndPoints\SOAP%20API%20WSDL%20EndPoints\catalogProductRepositoryV1.xml"><con:part><con:url>file:\C:\API_Testing\API_Testing_Project\SOAP%20API%20WSDL%20EndPoints\SOAP%20API%20WSDL%20EndPoints\catalogProductRepositoryV1.xml</con:url><con:content><![CDATA[<definitions name="MagentoWSDL" targetNamespace="http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap-enc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/">
+<con:soapui-project id="952a537e-76df-46de-806d-aa7aac4f6f09" activeEnvironment="Default" name="catalogProductRepositoryV1" resourceRoot="" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="a5903f97-11de-42aa-ada8-a44f3bd6572a" wsaVersion="NONE" name="catalogProductRepositoryV1Binding" type="wsdl" bindingName="{http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1}catalogProductRepositoryV1Binding" soapVersion="1_2" anonymous="optional" definition="file:/C:/API_Testing/API_Testing_Project/SOAP%20API%20WSDL%20EndPoints/SOAP%20API%20WSDL%20EndPoints/catalogProductRepositoryV1.xml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="file:\C:\API_Testing\API_Testing_Project\SOAP%20API%20WSDL%20EndPoints\SOAP%20API%20WSDL%20EndPoints\catalogProductRepositoryV1.xml"><con:part><con:url>file:\C:\API_Testing\API_Testing_Project\SOAP%20API%20WSDL%20EndPoints\SOAP%20API%20WSDL%20EndPoints\catalogProductRepositoryV1.xml</con:url><con:content><![CDATA[<definitions name="MagentoWSDL" targetNamespace="http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap-enc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/">
   <types>
     <xsd:schema targetNamespace="http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1">
       <xsd:element name="GenericFault" type="tns:GenericFault"/>
@@ -5007,7 +5007,7 @@ def holder = new XmlHolder( messageExchange.responseContentAsXml)
 
 def Product_Name = context.expand('${#TestCase#Product_Name}')
 
-assert holder.getNodeValue("//*:name") == Product_Name</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1/catalogProductRepositoryV1PortType/catalogProductRepositoryV1SaveRequest"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" id="fb704a21-b21e-41ac-906b-55f30bbe3dda" name="GetProductBySKUandID"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>catalogProductRepositoryV1Binding</con:interface><con:operation>catalogProductRepositoryV1Get</con:operation><con:request name="GetProductBySKUandID" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="5e10d138-8b21-42c6-9b5e-2ec446035e12"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#TestCase#Authorization}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1">
+assert holder.getNodeValue("//*:name") == Product_Name</scriptText></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1/catalogProductRepositoryV1PortType/catalogProductRepositoryV1SaveRequest"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" id="fb704a21-b21e-41ac-906b-55f30bbe3dda" name="GetProductBySKUandID"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>catalogProductRepositoryV1Binding</con:interface><con:operation>catalogProductRepositoryV1Get</con:operation><con:request name="GetProductBySKUandID" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="5e10d138-8b21-42c6-9b5e-2ec446035e12"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#TestCase#Authorization}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1">
    <soap:Header/>
    <soap:Body>
       <def:catalogProductRepositoryV1GetRequest>
@@ -5071,7 +5071,7 @@ assert i.toInteger() > 0 </scriptText></con:configuration></con:assertion><con:a
 
 def holder = new XmlHolder( messageExchange.responseContentAsXml)
 
-assert holder.getNodeValue("//*:result") == "true"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1/catalogProductRepositoryV1PortType/catalogProductRepositoryV1DeleteByIdRequest"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties><con:property><con:name>Authorization</con:name><con:value>bearer f0rf13pxtxp7mftwc23rq6e52yvmi5um</con:value></con:property><con:property><con:name>Product_SKU</con:name><con:value>SKU00175</con:value></con:property><con:property><con:name>Product_Name</con:name><con:value>Iphone Air 501</con:value></con:property><con:property><con:name>Product_Price</con:name><con:value>26000</con:value></con:property><con:property><con:name>Product_attributeSetId</con:name><con:value>4</con:value></con:property><con:property><con:name>Product_typeId</con:name><con:value>simple</con:value></con:property><con:property><con:name>Product_id</con:name><con:value/></con:property></con:properties></con:testCase><con:testCase id="c37b453f-aa8a-46f9-8cd0-ea5212fb9876" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Product_E2EFlow_System Testcase1" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Product Flow" id="a213ada8-dc8c-433c-bdf1-9d0d7033a8dc"><con:settings/><con:config><script>import com.eviware.soapui.model.testsuite.TestRunner.Status
+assert holder.getNodeValue("//*:result") == "true"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1/catalogProductRepositoryV1PortType/catalogProductRepositoryV1DeleteByIdRequest"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties><con:property><con:name>Authorization</con:name><con:value>bearer f0rf13pxtxp7mftwc23rq6e52yvmi5um</con:value></con:property><con:property><con:name>Product_SKU</con:name><con:value>SKU00175</con:value></con:property><con:property><con:name>Product_Name</con:name><con:value>Iphone Air 501</con:value></con:property><con:property><con:name>Product_Price</con:name><con:value>26000</con:value></con:property><con:property><con:name>Product_attributeSetId</con:name><con:value>4</con:value></con:property><con:property><con:name>Product_typeId</con:name><con:value>simple</con:value></con:property><con:property><con:name>Product_id</con:name><con:value/></con:property></con:properties><con:securityTest id="49bf52f1-4380-4e6a-bb97-2f591804d909" name="SecurityTest 1" failOnError="true"><con:settings/><con:properties/></con:securityTest></con:testCase><con:testCase id="c37b453f-aa8a-46f9-8cd0-ea5212fb9876" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Product_E2EFlow_System Testcase1" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Product Flow" id="a213ada8-dc8c-433c-bdf1-9d0d7033a8dc"><con:settings/><con:config><script>import com.eviware.soapui.model.testsuite.TestRunner.Status
 
 // get TestCase
 def tc = testRunner.testCase.testSuite.project.testSuites["Product_FunctionalFlow_TestSuite"].testCases["Product_Functional Testcase"]
@@ -5087,119 +5087,4 @@ log.info "Number of test steps which ran: " + runner.results.size()
 assert runner.status != Status.FAILED : runner.reason
 
 // assert that only four steps ran!!
-assert runner.results.size() == 4</script></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="9b748587-3a62-4f91-8f29-c06d3214247e" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Product_E2E System Testcase" searchProperties="true"><con:settings/><con:testStep type="request" id="816b1647-74ee-44be-829f-810c5c68e62c" name="CreateNewProduct"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>catalogProductRepositoryV1Binding</con:interface><con:operation>catalogProductRepositoryV1Save</con:operation><con:request name="CreateNewProduct" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="816ac5bd-7265-418c-93dd-74e448e67145"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#TestCase#Authorization}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1">
-   <soap:Header/>
-   <soap:Body>
-      <def:catalogProductRepositoryV1SaveRequest>
-         <product>
-            <sku>SKU00175</sku>
-                  <name>Iphone Air 501</name>
-                  <attributeSetId>4</attributeSetId> //default value 4
-                  <price>25000</price>
-                  <typeId>simple</typeId> //for value refer catalogProductTypeListV1 WSDL Endpoint
-         </product>
-         
-      </def:catalogProductRepositoryV1SaveRequest>
-   </soap:Body>
-</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="7c792689-c886-4a70-a01b-3dc6e946477e" name="SOAP Response"/><con:assertion type="GroovyScriptAssertion" id="ba5d9345-7109-4a59-b0d8-33c145335c21" name="Script Assertion"><con:configuration/></con:assertion><con:assertion type="GroovyScriptAssertion" id="6793c46b-8095-432d-b479-31f065435aa8" name="SLA Check"><con:configuration><scriptText>assert messageExchange.timeTaken &lt; 1500</scriptText></con:configuration></con:assertion><con:assertion type="Schema Compliance" id="cc822b64-ff2e-429e-9b44-ff682bab9287" name="Schema Compliance"><con:configuration><definition/></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1/catalogProductRepositoryV1PortType/catalogProductRepositoryV1SaveRequest"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" id="c51989a2-3e4c-43e9-8889-32004408705d" name="GetProductList"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>catalogProductRepositoryV1Binding</con:interface><con:operation>catalogProductRepositoryV1GetList</con:operation><con:request name="GetProductList" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="5e196c58-490e-481c-8623-6dcb1a8cefc1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#TestCase#Authorization}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1">\r
-   <soap:Header/>\r
-   <soap:Body>\r
-      <def:catalogProductRepositoryV1GetListRequest>\r
-         <searchCriteria>\r
-            
-         </searchCriteria>\r
-      </def:catalogProductRepositoryV1GetListRequest>\r
-   </soap:Body>\r
-</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="660d53cd-21af-416e-b845-d9594ca63628" name="SOAP Response"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1/catalogProductRepositoryV1PortType/catalogProductRepositoryV1GetListRequest"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" id="a57ab896-197d-4a9c-a2ef-9b072ee4f8ab" name="GetProductBySKUandID"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>catalogProductRepositoryV1Binding</con:interface><con:operation>catalogProductRepositoryV1Get</con:operation><con:request name="GetProductBySKUandID" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="5e10d138-8b21-42c6-9b5e-2ec446035e12"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#TestCase#Authorization}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1">
-   <soap:Header/>
-   <soap:Body>
-      <def:catalogProductRepositoryV1GetRequest>
-         <sku>SKU00175</sku>
-         <id>177</id>
-      </def:catalogProductRepositoryV1GetRequest>
-   </soap:Body>
-</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="c535b9d0-ebb3-4ad0-963b-008698895c00" name="SOAP Response"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1/catalogProductRepositoryV1PortType/catalogProductRepositoryV1GetRequest"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" id="b5e01cd7-4909-453d-aac6-c41b722c9f84" name="DeleteProductBySKU"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>catalogProductRepositoryV1Binding</con:interface><con:operation>catalogProductRepositoryV1DeleteById</con:operation><con:request name="DeleteProductBySKU" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="cd4136c2-2afc-423d-9ad3-ef68d4232780"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#TestCase#Authorization}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1">\r
-   <soap:Header/>\r
-   <soap:Body>\r
-      <def:catalogProductRepositoryV1DeleteByIdRequest>\r
-         <sku>SKU00012</sku>\r
-      </def:catalogProductRepositoryV1DeleteByIdRequest>\r
-   </soap:Body>\r
-</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="c0e69878-eb82-48f1-868b-0c6855ba164f" name="SOAP Response"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1/catalogProductRepositoryV1PortType/catalogProductRepositoryV1DeleteByIdRequest"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="groovy" name="Product Flow" id="13e3bc92-998c-44f6-9d44-a60c13f0593e"><con:settings/><con:config><script>import com.eviware.soapui.support.GroovyUtils
-
-// Declaring variables and importing properties
-
-def Product_SKU = context.expand('${#TestCase#Product_SKU}')
-def Product_Name = context.expand('${#TestCase#Product_Name}')
-def Product_Price = context.expand('${#TestCase#Product_Price}')
-def Product_attributeSetId = context.expand('${#TestCase#Product_attributeSetId}')
-def Product_typeId = context.expand('${#TestCase#Product_typeId}')
-
-// import the Request property of CreateNewProduct Step
-
-def createNewProductReqXml = context.expand('${CreateNewProduct#Request}')
-//log.info createNewProductReqXml
-
-// Creating a XML holder
-def gUtil = new GroovyUtils(context)
-def Xmlhol = gUtil.getXmlHolder(createNewProductReqXml)
-
-// changing value of elements
-
-Xmlhol.setNodeValue("//*:sku", Product_SKU)
-Xmlhol.setNodeValue("//*:name", Product_Name)
-Xmlhol.setNodeValue("//*:attributeSetId", Product_attributeSetId)
-Xmlhol.setNodeValue("//*:price", Product_Price)
-Xmlhol.setNodeValue("//*:typeId", Product_typeId)
-
-// set the modified XML value to the Create New Product#Request Property
-def modifiedXmlAsString = Xmlhol.getXml()
-//log.info(modifiedXmlAsString)
-testRunner.testCase.getTestStepByName("CreateNewProduct").setPropertyValue("Request",modifiedXmlAsString)
-
-// Run the Create New Product#Request
-testRunner.testCase.testSuite.project.testSuites["Product_E2ESystem TestSuite"].testCases["Product_E2E System Testcase"].testSteps["CreateNewProduct"].run(testRunner,context)
-
-// Get the response property from Create New Product
-def createNewProductResXml = context.expand('${CreateNewProduct#Response}')
-
-// create an xml holder to get create new product response
-def Xmlhol1 = gUtil.getXmlHolder(createNewProductResXml )
-
-def Product_Id = Xmlhol1.getNodeValue("//*:id")
-log.info( "Created new Product Id: " + Product_Id )
-testRunner.testCase.setPropertyValue("NewProductId", Product_Id)
-
-// import the Request property of GetProductBySKUandID
-def getProductReqXml = context.expand('${GetProductBySKUandID#Request}')
-def Xmlhol2 = gUtil.getXmlHolder(getProductReqXml)
-
-// changing value of elements
-Xmlhol2.setNodeValue("//*:sku",Product_SKU)
-Xmlhol2.setNodeValue("//*:id",Product_Id)
-
-// set the modified XML value to the GetProductBySKUandID#Request Property
-def modifiedXmlAsString1 = Xmlhol2.getXml()
-//log.info modifiedXmlAsString1
-testRunner.testCase.getTestStepByName("GetProductBySKUandID").setPropertyValue("Request",modifiedXmlAsString1)
-
-// Run the GetProductBySKUandID#Request
-testRunner.testCase.testSuite.project.testSuites["Product_E2ESystem TestSuite"].testCases["Product_E2E System Testcase"].testSteps["GetProductBySKUandID"].run(testRunner,context)
-
-// Get the response property from GetProductBySKUandID
-def getProductResXml = context.expand('${GetProductBySKUandID#Response}')
-
-// create an xml holder to get GetProductBySKUandID response
-def Xmlhol3 = gUtil.getXmlHolder(getProductResXml)
-
-//get product name and set product found as true
-def product_name = Xmlhol3.getNodeValue("//*:name")
-if (product_name != null)
-{
-log.info "New Product Found by Get product Service !"
-log.info ("Product Name: " + product_name)
-testRunner.testCase.setPropertyValue("NewProduct_name", product_name)
-testRunner.testCase.setPropertyValue("NewProductFound", "TRUE")
-}
-
-</script></con:config></con:testStep><con:properties><con:property><con:name>Authorization</con:name><con:value>bearer f0rf13pxtxp7mftwc23rq6e52yvmi5um</con:value></con:property><con:property><con:name>Product_SKU</con:name><con:value>SKU00175</con:value></con:property><con:property><con:name>Product_Name</con:name><con:value>Iphone Air 501</con:value></con:property><con:property><con:name>Product_Price</con:name><con:value>25000</con:value></con:property><con:property><con:name>Product_attributeSetId</con:name><con:value>4</con:value></con:property><con:property><con:name>Product_typeId</con:name><con:value>simple</con:value></con:property><con:property><con:name>NewProductId</con:name><con:value>177</con:value></con:property><con:property><con:name>NewProduct_name</con:name><con:value>Iphone Air 501</con:value></con:property><con:property><con:name>NewProductFound</con:name><con:value>TRUE</con:value></con:property></con:properties></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
+assert runner.results.size() == 4</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
